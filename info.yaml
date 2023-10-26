@@ -24,7 +24,7 @@ documentation:
   author:       "John Madden"      # Your name
   title:        "Leaky Integrate-and-Fire Demo"      # Project title
   language:     "Verilog" # other examples include Verilog, Amaranth, VHDL, etc
-  description:  "Count up to 10, one second at a time."      # Short description of what your project does
+  description:  "LIF."      # Short description of what your project does
 
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |
@@ -47,23 +47,23 @@ documentation:
 
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc).
   inputs:               
-    - compare bit 11
-    - compare bit 12
-    - compare bit 13
-    - compare bit 14
-    - compare bit 15
-    - compare bit 16
-    - compare bit 17
-    - compare bit 18
+    - current bit 11
+    - current bit 12
+    - current bit 13
+    - current bit 14
+    - current bit 15
+    - current bit 16
+    - current bit 17
+    - current bit 18
 # A description of what the outputs do (e.g. status LED, SPI MISO, etc)
   outputs:
-    - segment a
-    - segment b
-    - segment c
-    - segment d
-    - segment e
-    - segment f
-    - segment g
+    - membrane a
+    - membrane b
+    - membrane c
+    - membrane d
+    - membrane e
+    - membrane f
+    - membrane g
     - dot
 # A description of what the bidirectional I/O pins do (e.g. I2C SDA, I2C SCL, etc)
   bidirectional:
@@ -79,7 +79,7 @@ documentation:
 # The following fields are optional
   tag:          "timer, test"      # comma separated list of tags: test, encryption, experiment, clock, animation, utility, industrial, pwm, fpga, alu, microprocessor, risc, riscv, sensor, signal generator, fft, filter, music, bcd, sound, serial, timer, random number generator, calculator, decoder, counter, puzzle, multiplier, game, oscillator,
   external_hw:  ""      # Describe any external hardware needed
-  discord:      "mattvenn"      # Your discord handle, used for communication and automatically assigning tapeout role after a submission
+  discord:      ""      # Your discord handle, used for communication and automatically assigning tapeout role after a submission
   doc_link:     ""      # URL to longer form documentation, eg the README.md in your repository
   clock_hz:     10000000       # Clock frequency in Hz (if required)
   picture:      ""      # relative path to a picture in your repository (must be 512kb or less)
